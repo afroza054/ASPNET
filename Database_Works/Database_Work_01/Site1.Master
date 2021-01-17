@@ -1,0 +1,42 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="Database_Work_01.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+   
+<head runat="server">
+     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Online</title>
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <script src="Scripts/umd/popper.js"></script>
+ <script src="Scripts/jquery-3.5.1.js"></script>
+    <style>
+        body{
+            padding-top:70px;
+        }
+    </style>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <nav class="navbar navbar-white bg-light navbar-expand-md fixed-top">
+            <a class="navbar-brand" href="/">FoodPanda</a>
+            <div class="navbar-collapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"> <a class="nav-link" href="Default.aspx">Home</a></li>
+                     <li class="nav-item"> <a class="nav-link" href="W1.aspx">Order</a></li>
+                     <li class="nav-item"> <a class="nav-link" href="W2.aspx">Delivery</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="W3.aspx">Master Details</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="container" style="min-height:450px">
+            <asp:ContentPlaceHolder ID="body" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <script src="Scripts/bootstrap.js"></script>
+    </form>
+</body>
+</html>
